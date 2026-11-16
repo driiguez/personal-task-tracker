@@ -3,10 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Personal Task Tracker</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>My Personal Task Tracker</h1>
-    <p>My journey as a developer starts here!</p>
+    <div class="container">
+      <header>
+        <h1>My Task Tracker</h1>
+        <p>Organize your day, one task at a time.</p>
+      </header>
+
+      <main>
+        <section class="task-input">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="What needs to get done?"
+          />
+
+          <button id="addTaskButton">Add Task</button>
+        </section>
+
+        <section class="task-list">
+          <h2>My Tasks</h2>
+
+          <ul id="taskList">
+            <!-- Tasks will appear here -->
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
