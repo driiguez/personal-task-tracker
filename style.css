@@ -71,3 +71,33 @@ header p {
   padding: 0;
   list-style: none;
 }
+
+/* Individual task styling */
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #f4f6f9;
+  border-radius: 6px;
+}
+
+/* Completed task styling */
+
+.task-list li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Delete button styling */
+
+.delete-button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}

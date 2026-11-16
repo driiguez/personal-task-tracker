@@ -11,27 +11,44 @@ console.log("Task Tracker JavaScript is connected!");
 function addTask() {
   const taskText = taskInput.value.trim();
 
-  // Prevent empty tasks
-
   if (taskText === "") {
     alert("Please enter a task!");
     return;
   }
 
-  // Create a new list item
-
+  // Create the list item
   const li = document.createElement("li");
 
-  li.textContent = taskText;
+  // Create the task text
+  const span = document.createElement("span");
+  span.textContent = taskText;
 
-  // Add the task to the page
+  // Mark task as completed when clicked
+  span.addEventListener("click", function () {
+    li.classList.toggle("completed");
+  });
 
+  // Create delete button
+  const deleteButton = document.createElement("button");
+  deleteButton.textContent = "Delete";
+  deleteButton.classList.add("delete-button");
+
+  // Remove task when delete button is clicked
+  deleteButton.addEventListener("click", function () {
+    li.remove();
+  });
+
+  // Add elements to the list item
+  li.appendChild(span);
+  li.appendChild(deleteButton);
+
+  // Add list item to the page
   taskList.appendChild(li);
 
-  // Clear the input
-
+  // Clear input
   taskInput.value = "";
 }
+
 // Listen for button clicks
 
 addTaskButton.addEventListener("click", addTask);
