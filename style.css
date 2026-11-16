@@ -1,0 +1,73 @@
+/* General page styling */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+
+.container {
+  max-width: 650px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+header h1 {
+  color: #263238;
+}
+
+header p {
+  color: #777;
+}
+
+/* Task input */
+
+.task-input {
+  display: flex;
+  gap: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.task-input button {
+  padding: 12px 20px;
+  background-color: #2825eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Task list */
+
+.task-list {
+  margin-top: 35px;
+}
+
+.task-list h2 {
+  color: #263238;
+}
+
+.task-list ul {
+  padding: 0;
+  list-style: none;
+}
