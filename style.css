@@ -2,7 +2,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f6f9;
+  background-color: #91aaff;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,7 @@ body {
   max-width: 650px;
   margin: 80px auto;
   padding: 30px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
@@ -50,7 +50,7 @@ header p {
 
 .task-input button {
   padding: 12px 20px;
-  background-color: #2825eb;
+  background-color: #5c53e6;
   color: white;
   border: none;
   border-radius: 6px;
