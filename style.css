@@ -70,6 +70,7 @@ header p {
 .task-list ul {
   padding: 0;
   list-style: none;
+  color: #e00808;
 }
 
 /* Individual task styling */
@@ -88,14 +89,14 @@ header p {
 
 .task-list li.completed {
   text-decoration: line-through;
-  color: #999;
+  color: #08e738;
 }
 
 /* Delete button styling */
 
 .delete-button {
   background-color: #dc2626;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 7px 12px;
   border-radius: 5px;
