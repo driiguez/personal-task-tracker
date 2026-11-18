@@ -52,3 +52,8 @@ function addTask() {
 // Listen for button clicks
 
 addTaskButton.addEventListener("click", addTask);
+taskInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});

@@ -88,7 +88,7 @@ header p {
 /* Completed task styling */
 
 .task-list li.completed {
-  text-decoration: line-through;
+  text-decoration:; line-through;
   color: #08e738;
 }
 
